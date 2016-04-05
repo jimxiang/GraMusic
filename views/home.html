@@ -1,0 +1,55 @@
+<% include header.html %>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span> 
+        	</button>
+        	<a class="navbar-brand" href="#home">GraMusic</a> 
+      	</div>
+      	<div class="navbar-collapse collapse">
+        	<ul class="nav navbar-nav navbar-right">
+	          <li class="active"><a href="#about" class="smoothScroll">About</a></li>
+	          <li><a href="/home/map" class="smoothScroll">Map</a></li>
+		        <li><a href="/home/music" class="smoothScroll">Music</a></li>
+		        <li><a href="/home/playList" class="smoothScroll">PlayList</a></li>
+		        <li><a href="" class="smoothScroll">RSS</a></li>
+		        <li><a href="/" class="smoothScroll">Logout</a></li>
+        	</ul>
+      	</div>
+    </div>
+</div>
+<div id="headerwrap" name="home">
+  	<header class="clearfix"> <i class="fa fa-language icon"></i>
+    	<h1>Music & Data statistics</h1>
+    	<p>Grabbing music informations from NetEase Music and analyze those datas.</p>
+    	<p>You may find something interesting!</p>
+    	<a href="#about" class="smoothScroll btn btn-lg">Start</a> </header>
+</div>
+
+<div id="about" name="about">
+  	<div class="container">
+    	<div class="row white">
+      		<h2 class="centered">ABOUT</h2>
+      		<hr>
+      		<div class="col-md-6">
+      			<img class="img-responsive" src="/images/diagram.png" align="">
+      		</div>
+      		<div class="col-md-6">
+	        	<h3>What is it?</h3>
+	        	<p>GraMusic is a mashup web application. It will show you some informations about the songs, play lists and users in the music application Netease-Music, which is very popular in China. </p>
+	        	<h3>How I made?</h3>
+	        	<ul>
+	          		<li>Grabbing row datas, absolutely the JSON datas, from the Netease Music APIs.</li>
+		          	<li>Selecting datas I'll use and integrate to a XML document.</li>
+		          	<li>Using the XML document and other APIs, including Baidu Map API, AMCharts API and RSS.</li>
+		          	<li>Using the NodeJS to build a server and using the Bootstrap to optimize the webpages.</li>
+		          	<li>That's all.</li>
+	        	</ul>
+      		</div>
+    	</div>
+ 	</div>
+</div>
+<% include footer.html %>
