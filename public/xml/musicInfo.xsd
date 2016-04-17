@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xsd:element name="music-info"/>
+
+  <xsd:complexType>
+    <xsd:sequence>
+      <xsd:element name="musicName" type="xsd:string"/>
+      <xsd:element name="artistName" type="xsd:string"/>
+      <xsd:element name="musicUrl" type="xsd:string"/>
+      <xsd:element name="comments" type="xsd:string"/>
+      <xsd:element name="nickName" type="xsd:string"/>
+      <xsd:element name="createTime" type="xsd:string"/>
+      <xsd:element name="commentCount" type="xsd:string"/>
+      <xsd:element name="shareCount" type="xsd:string"/>
+      <xsd:element name="subscribedCount" type="xsd:string"/>
+      <xsd:element name="province" type="xsd:string"/>
+      <xsd:element name="city" type="xsd:string"/>
+      <xsd:element name="playListName" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

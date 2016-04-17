@@ -11,21 +11,71 @@
       	</div>
       	<div class="navbar-collapse collapse">
         	<ul class="nav navbar-nav navbar-right">
-	          	<li><a href="/home" class="smoothScroll">Home</a></li>
-	          	<li class="active"><a href="/home/map" class="smoothScroll">Map</a></li>
-		        <li><a href="/home/music" class="smoothScroll">Music</a></li>
-		        <li><a href="/home/playList" class="smoothScroll">PlayList</a></li>
-		        <li><a href="" class="smoothScroll">RSS</a></li>
-		        <li><a href="/" class="smoothScroll">Logout</a></li>
+	          <li><a href="/home">Home</a></li>
+	          <li class="active"><a href="/home/map">Map</a></li>
+		        <li><a href="/home/topTen">TopTen</a></li>
+		        <li><a href="/home/playList">PlayList</a></li>
+		        <li><a href="/home/rss">RSS</a></li>
+		        <li><a href="/" class="">Logout</a></li>
         	</ul>
       	</div>
     </div>
 </div>
-<div id="headerwrap" name="home">
-  	<header class="clearfix"> <i class="fa fa-language icon"></i>
-    	<h1>Music & Data statistics</h1>
-    	<p>Grabbing music informations from NetEase Music and analyze those datas.</p>
-    	<p>You may find something interesting!</p>
-    	<a href="#about" class="smoothScroll btn btn-lg">Start</a> </header>
+<div id="headerwrap">
+  	<header class="clearfix"> 
+      <!-- <i class="fa fa-language icon"></i> -->
+    	<h1><%= subtitle%></h1>
+      <div>
+        <label class="choose">Choose province</label>
+        <!-- <input type="text" id="districtName" style="width:80px" value="重庆市"> -->
+        <select id="districtName" style="width:80px">
+          <option selected="">北京市</option>
+          <option>上海市</option>
+          <option>天津市</option>
+          <option>广东省</option>
+          <option>山东省</option>
+          <option>江苏省</option>
+          <option>河南省</option>
+          <option>河北省</option>
+          <option>浙江省</option>
+          <option>香港特别行政区</option>
+          <option>陕西省</option>
+          <option>湖南省</option>
+          <option>重庆市</option>
+          <option>福建省</option>
+          <option>天津市</option>
+          <option>云南省</option>
+          <option>四川省</option>
+          <option>广西壮族自治区</option>
+          <option>安徽省</option>
+          <option>海南省</option>
+          <option>江西省</option>
+          <option>湖北省</option>
+          <option>山西省</option>
+          <option>辽宁省</option>
+          <option>台湾省</option>
+          <option>黑龙江</option>
+          <option>内蒙古自治区</option>
+          <option>澳门特别行政区</option>
+          <option>贵州省</option>
+          <option>甘肃省</option>
+          <option>青海省</option>
+          <option>新疆维吾尔族自治区</option>
+          <option>西藏自治区</option>
+          <option>吉林省</option>
+          <option>宁夏回族自治区</option>
+        </select>
+        <form>
+          <div class="col-md-offset-2 col-md-8">
+            <input type="button" class="btn btn-info col-md-3" onclick="getBoundary()" value="Get Boundary">
+            <input type="button" class="btn btn-info col-md-3" onclick="clearBoundary()" value="Cancel Boundary">
+            <input type="button" class="btn btn-info col-md-3" onclick="showAll()" value="Get All Boundary">
+            <input type="button" class="btn btn-info col-md-3" onclick="getMarker(points)" value="Show All">
+          </div>
+        </form>
+      </div>
+      <div id="container"></div>
+      
+    </header>
 </div>
 <% include footer.html %>

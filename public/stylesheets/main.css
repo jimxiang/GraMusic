@@ -1,0 +1,85 @@
+.navbar {
+	border-radius: 0;
+}
+
+.login {
+	margin-bottom: 164px;
+}
+
+.index {
+	margin-bottom: -10px;
+}
+
+.signup {
+	margin-bottom: 66px;
+}
+
+#container{
+	margin-left: 10%;
+	height:600px;
+	width:80%;
+}
+
+.choose {
+	margin-top: 40px;
+	margin-bottom: -20px;
+}
+
+table th {
+	text-align: center;
+}
+
+._no_1 {
+	background-color: red;
+	
+}
+
+._no_2, .jx-badge {
+	background-color: #EDC32A;
+}
+
+._no_3 {
+	background-color: #70EA2A;
+}
+
+.jx-modal {
+	margin-top: 100px;
+}
+
+.jx-list {
+	margin-top: 20px;
+}
+
+.jx-img {
+	margin-top: 7px;
+}
+li {
+	color: black;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+#chartdiv {
+	width		: 100%;
+	height		: 500px;
+	font-size	: 11px;
+}
+
+.jx-container {
+	margin-top: 74px;
+}
+
+.jx-div {
+	margin-top: 20px;
+}
+
+.jx-img-modal {
+	margin-top: 50px;
+}
+
+.jx-ul {
+	margin-top: 60px;
+}
