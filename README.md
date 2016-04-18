@@ -46,7 +46,8 @@ Mashup web application
   3. Enter the node.js server directory: <pre><code>cd GraMusic</code></pre>      
   4. Run <pre><code>npm install</code></pre>   
   5. Open the browser and input the URL: <pre><code>localhost:3000</code></pre>
-  6. You must login then you can see the home page, the <b>username</b> is <b>admin</b> and the <b>password</b> is <b>123456</b>   
+  6. You must login then you can see the home page, the <b>username</b> is <b>admin</b> and the <b>password</b> is <b>123456</b>  
+
 ## Q&A   
-* ### 1.You need to use your Netease Music's username and password to simulate landing.   
-* ### 2.The data I used was pretreated because the data's amount is very large. If you want to deal with the data at client or server, it will be very slow. So, the data is not the newest. So if you want to update, please run the <b>getId.php</b> and <b>crawler.py</b> in the [Crawler] directory.   
+### 1.You need to use your Netease Music's username and password to simulate landing.   
+### 2.The data I used was pretreated because the data's amount is very large. If you want to deal with the data at client or server, it will be very slow. So, the data is not the newest. So if you want to update, please run the <b>getId.php</b> and <b>crawler.py</b> in the [Crawler] directory.   
