@@ -1,5 +1,5 @@
 # GraMusic
-Mashup web application   
+Mashup web application using the Node.js   
 ## Configuration and deployment:  
    
 ### 0.Directory structure:   
